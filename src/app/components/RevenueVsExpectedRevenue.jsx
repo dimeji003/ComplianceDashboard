@@ -78,7 +78,7 @@ export default function RevenueVsExpectedRevenue() {
         <h1 className="text-2xl font-semibold">Revenue vs Expected Revenue</h1>
       </div>
 
-      <div style={{ width: "100%", height: 360 }}>
+      <div style={{ width: "100%", height: 340 }}>
         <ResponsiveContainer>
           <AreaChart
             data={data}
