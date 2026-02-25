@@ -2,6 +2,7 @@ import React from 'react'
 import Intro from './introductorymetrics'
 import ComplianceOverview from './ComplianceOverview'
 import ComplianceBySector from './ComplianceBySector'
+import CasesByStatusTable from './CasesByStatusTable'
 import RevenueVsExpectedRevenue from "./RevenueVsExpectedRevenue";
 import CasesByStatus from "./CasesByStatus";
 
@@ -18,7 +19,13 @@ export default function Main(){
             <div className='flex flex-row gap-7 mt-11  m-auto ml-20'>
                 <ComplianceOverview />
                 <ComplianceBySector />
+                
 
+            </div>
+            <CasesByStatusTable />
+            <div className="w-[85%] m-auto mt-8 grid grid-cols-1 lg:grid-cols-2 gap-6">
+                 <RevenueVsExpectedRevenue />
+                 <CasesByStatus />
             </div>
             
             
