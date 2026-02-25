@@ -28,16 +28,16 @@ export default function Main(){
                 <CasesByStatusTable />
             </div>
 
-            <div className=' ml-20 flex flex-row gap-7 mt-11  m-auto'>
-                <DigitalPlatformUsage />
-                <FilingTrendsChart />
-            </div>
             
             <div className=' ml-20 flex flex-row gap-7 mt-11  m-auto'>
                 <CasesByStatus />
                 <RevenueVsExpectedRevenue />
             </div>
             
+            <div className=' ml-20 flex flex-row gap-7 mt-11  m-auto'>
+                <DigitalPlatformUsage />
+                <FilingTrendsChart />
+            </div>
             </div>
             
             
