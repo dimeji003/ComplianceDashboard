@@ -2,6 +2,8 @@ import React from 'react'
 import Intro from './introductorymetrics'
 import ComplianceOverview from './ComplianceOverview'
 import ComplianceBySector from './ComplianceBySector'
+import RevenueVsExpectedRevenue from "./RevenueVsExpectedRevenue";
+import CasesByStatus from "./CasesByStatus";
 
 export default function Main(){
     return (
@@ -15,8 +17,13 @@ export default function Main(){
             <Intro />
             <ComplianceOverview />
             <ComplianceBySector />
-
+            <RevenueVsExpectedRevenue />
+            <CasesByStatus />
             </div>
+            
+            
+
+
 
         
         </div>
