@@ -6,17 +6,17 @@ const data = [
   { name: "Group A", value: 400 },
   { name: "Group B", value: 300 },
   { name: "Group C", value: 300 },
-  { name: "Group D", value: 200 },
+  
 ];
 
 const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042"];
 
 export default function MyPieChart() {
   return (
-    <div className="my-6 w-[40%] m-auto">
-        <h1 className="text-center">Compliance Overview</h1>
+    <div className=" w-[45%] h-[40%] border-white shadow-md rounded-md p-5">
+        <h2 className="font-bold text-2xl py-3">Compliance Overview</h2>
 
-        <PieChart width={400} height={400} className="my-2">
+        <PieChart width={400} height={300} className="pt-5">
           
           <Pie
             data={data}
@@ -31,7 +31,6 @@ export default function MyPieChart() {
             ))}
           </Pie>
           <Tooltip />
-          <Legend />
         </PieChart>
     </div>
       );

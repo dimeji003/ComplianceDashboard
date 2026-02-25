@@ -11,14 +11,17 @@ export default function Main(){
             <div  className='text-black text-xl border-b p-2 py-3 mx-0 shadow border-red-400'>
 
             <h1 className='ml-6'>Digital and Technology Compliance Dashboard</h1>
-            <p className='text-[16px] font-light text-gray-500 pt-1 ml-6'>Real Time Monitoring</p>
+            <p className='text-[16px] font-light text-gray-500 pt-1 ml-6'>Tax Regulatory Service - Real Time Monitoring</p>
             </div>
             <div >
             <Intro />
-            <ComplianceOverview />
-            <ComplianceBySector />
-            <RevenueVsExpectedRevenue />
-            <CasesByStatus />
+            <div className='flex flex-row gap-7 mt-11  m-auto ml-20'>
+                <ComplianceOverview />
+                <ComplianceBySector />
+
+            </div>
+            
+            
             </div>
             
             
