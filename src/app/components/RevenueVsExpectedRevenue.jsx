@@ -72,7 +72,7 @@ function CustomTooltip({ active, payload, label }) {
 
 export default function RevenueVsExpectedRevenue() {
   return (
-    <div className="border border-white p-4 rounded-xl shadow-md h-full">
+    <div className="border border-white p-4 rounded-xl shadow-md w-[45%] h-[40%]">
       <div className="flex items-center gap-3 mb-3">
         <div className="text-2xl font-semibold">₦</div>
         <h1 className="text-2xl font-semibold">Revenue vs Expected Revenue</h1>

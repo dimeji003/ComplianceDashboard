@@ -3,9 +3,9 @@
 import { PieChart, Pie, Cell, Tooltip, Legend } from "recharts";
 
 const data = [
-  { name: "Group A", value: 400 },
-  { name: "Group B", value: 300 },
-  { name: "Group C", value: 300 },
+  { name: "Compliant", value: 400 },
+  { name: "Non-Compliant", value: 300 },
+  { name: "Under-Compliant", value: 300 },
   
 ];
 

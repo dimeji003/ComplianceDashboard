@@ -4,6 +4,8 @@ import ComplianceOverview from './ComplianceOverview'
 import ComplianceBySector from './ComplianceBySector'
 import RevenueVsExpectedRevenue from "./RevenueVsExpectedRevenue";
 import CasesByStatus from "./CasesByStatus";
+import DigitalPlatformUsage from "./DigitalPlatformUsage"
+import FilingTrendsChart from './FillingTrends';
 
 export default function Main(){
     return (
@@ -20,7 +22,16 @@ export default function Main(){
                 <ComplianceBySector />
 
             </div>
+
+            <div className=' ml-20 flex flex-row gap-7 mt-11  m-auto'>
+                <DigitalPlatformUsage />
+                <FilingTrendsChart />
+            </div>
             
+            <div className=' ml-20 flex flex-row gap-7 mt-11  m-auto'>
+                <CasesByStatus />
+                <RevenueVsExpectedRevenue />
+            </div>
             
             </div>
             

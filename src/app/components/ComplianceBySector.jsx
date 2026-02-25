@@ -13,12 +13,11 @@ import {
 const data = [
   { name: "Manufacturing", sales: 400 },
   { name: "Finance", sales: 300 },
-  { name: "Mar", sales: 500 },
-  { name: "Apr", sales: 200 },
-  { name: "Apr", sales: 200 },
-  { name: "Apr", sales: 200 },
-  { name: "Apr", sales: 200 },
-  { name: "Apr", sales: 200 },
+  { name: "E-coommerce", sales: 500 },
+  { name: "Telecom", sales: 200 },
+  { name: "Media", sales: 200 },
+  { name: "Healthcare", sales: 200 },
+ 
 ];
 
 export default function ComplianceBySector() {
