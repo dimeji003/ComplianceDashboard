@@ -14,7 +14,7 @@ const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042"];
 export default function MyPieChart() {
   return (
     <div className=" w-[45%] h-[40%] border-white shadow-md rounded-md p-5">
-        <h2 className="font-bold text-2xl py-3">Compliance Overview</h2>
+        <h2 className="font-bold text-xl py-3">Compliance Overview</h2>
 
         <PieChart width={400} height={300} className="pt-5">
           

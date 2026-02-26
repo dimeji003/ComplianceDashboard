@@ -46,7 +46,7 @@ export default function ComplianceRateTrend() {
     <div className="border border-white p-4 rounded-xl shadow-md bg-white h-full">
       <div className="flex items-center gap-3 mb-3">
         <span className="text-xl font-semibold">📈</span>
-        <h2 className="text-2xl font-semibold">Compliance Rate Trend</h2>
+        <h2 className="text-xl font-semibold">Compliance Rate Trend</h2>
       </div>
 
       <div style={{ width: "100%", height: 360 }}>

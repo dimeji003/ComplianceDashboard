@@ -28,7 +28,7 @@ export default function FilingTrendsChart() {
   // ---------- COMPONENT ----------
   return (
     <div className="w-[45%] bg-white shadow-md rounded-xl p-5">
-      <h2 className="font-bold text-2xl mb-4 py-3">Filing Trends</h2>
+      <h2 className="font-bold text-xl mb-4 py-3">Filing Trends</h2>
 
       <ResponsiveContainer width="100%" height={300}>
         <BarChart data={data} margin={{ top: 20, right: 30, left: 0, bottom: 5 }}>

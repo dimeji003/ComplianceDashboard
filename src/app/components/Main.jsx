@@ -43,7 +43,7 @@ export default function Main(){
             </div>
 
             
-            <div className=' ml-20 flex flex-row gap-7 mt-11  m-auto'>
+            <div className=' ml-20 flex flex-row gap-7 mt-14  m-auto'>
                 <CasesByStatus />
                 <RevenueVsExpectedRevenue />
             </div>

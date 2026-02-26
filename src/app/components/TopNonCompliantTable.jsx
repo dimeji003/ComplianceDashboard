@@ -36,13 +36,7 @@ const companies = [
     outstanding: 156900,
     severity: "High",
   },
-  {
-    rank: 6,
-    name: "DataFlow Systems",
-    violations: 5,
-    outstanding: 98400,
-    severity: "Medium",
-  },
+  
 ];
 
 const formatMoney = (amount) =>
@@ -89,11 +83,11 @@ export default function TopNonCompliantTable() {
   return (
     <div className="border border-white p-4 rounded-xl shadow-md bg-white">
       <div className="flex items-center gap-3 mb-4">
-        <span className="text-xl">⛔</span>
-        <h2 className="text-2xl font-semibold">Top Non-Compliant Companies</h2>
+        <span className="text-lg">⛔</span>
+        <h2 className="text-xl font-semibold">Top Non-Compliant Companies</h2>
       </div>
 
-      <div className="flex flex-col gap-5">
+      <div className="flex flex-col gap-3">
         {companies.map((c) => (
           <div
             key={c.rank}
@@ -102,22 +96,22 @@ export default function TopNonCompliantTable() {
             <div className="flex items-center justify-between gap-6">
               {/* Left: rank + details */}
               <div className="flex items-center gap-6 min-w-0">
-                <div className="h-12 w-12 rounded-full bg-gray-100 flex items-center justify-center text-xl font-semibold text-gray-700">
+                <div className="h-12 w-12 rounded-full bg-gray-100 flex items-center justify-center text-sm font-semibold text-gray-700">
                   {c.rank}
                 </div>
 
                 <div className="min-w-0">
-                  <div className="text-2xl font-semibold text-gray-900 truncate">
+                  <div className="text-md font-semibold text-gray-900 truncate">
                     {c.name}
                   </div>
 
                   <div className="mt-2 flex items-center gap-8">
-                    <div className="flex items-center gap-2 text-xl text-gray-600">
+                    <div className="flex items-center gap-2 text-sm text-gray-600">
                       <DownRightIcon />
                       <span>{c.violations} violations</span>
                     </div>
 
-                    <div className="text-xl font-semibold text-red-600">
+                    <div className="text-sm font-semibold text-red-600">
                       {formatMoney(c.outstanding)} outstanding
                     </div>
                   </div>
