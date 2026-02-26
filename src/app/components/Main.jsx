@@ -45,11 +45,12 @@ export default function Main(){
                 <RevenueVsExpectedRevenue />
             </div>
             
-            <div className="w-[85%] m-auto my-10">
+            <div
+            >
                 <BankRemittanceTracking />
             </div>
             <div className=' ml-20 flex flex-row gap-7 mt-11  m-auto'>
-        
+                <DigitalPlatformUsage />
                 <FilingTrendsChart />
             </div>
             </div>

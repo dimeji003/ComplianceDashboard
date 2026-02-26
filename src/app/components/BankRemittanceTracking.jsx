@@ -43,21 +43,14 @@ const rows = [
   },
 ];
 
-const money = (n) =>
-  new Intl.NumberFormat("en-NG", {
-    style: "currency",
-    currency: "NGN",
-    maximumFractionDigits: 0,
-  }).format(n);
+const formatCurrency = (amount) => `₦${amount.toLocaleString("en-NG")}`;
 
 export default function BankRemittanceTracking() {
   return (
-    <div className="border border-white p-4 rounded-xl shadow-md bg-white">
-      <div className="mb-6">
-        <h2 className="text-2xl font-semibold">Bank Remittance Tracking</h2>
-        <p className="text-gray-500 mt-1">
-          Remittance summary and interbank transmission volume (Above ₦10,000)
-        </p>
+    <div className="border border-white p-4 rounded-xl shadow-md bg-white my-10 w-[85%] m-auto">
+      <div className="flex items-center gap-3 mb-4">
+        <div className="text-2xl font-semibold">🏦</div>
+        <h1 className="text-2xl font-semibold">Bank Remittance Tracking</h1>
       </div>
 
       <div className="overflow-x-auto rounded-xl border border-gray-100">
@@ -81,29 +74,25 @@ export default function BankRemittanceTracking() {
                 key={`${r.bank}-${r.year}`}
                 className="border-t border-gray-100 hover:bg-gray-50 transition"
               >
-                <td className="px-6 py-6 text-xl font-semibold text-gray-900">
+                <td className="px-6 py-5 text-blue-600 font-semibold">
                   {r.bank}
                 </td>
 
-                <td className="px-6 py-6 text-lg text-gray-700 font-medium">
-                  {r.year}
+                <td className="px-6 py-5 text-gray-900 font-medium">{r.year}</td>
+
+                <td className="px-6 py-5 font-semibold text-gray-900">
+                  {formatCurrency(r.amountDue)}
                 </td>
 
-                <td className="px-6 py-6 text-xl font-semibold text-gray-900">
-                  {money(r.amountDue)}
+                <td className="px-6 py-5 font-semibold text-gray-900">
+                  {formatCurrency(r.amountRemitted)}
                 </td>
 
-                <td className="px-6 py-6 text-xl font-semibold text-green-700">
-                  {money(r.amountRemitted)}
-                </td>
-
-                <td className="px-6 py-6 text-xl font-semibold text-gray-900">
+                <td className="px-6 py-5 text-gray-700 font-medium">
                   {r.transmissionsAbove10k.toLocaleString("en-NG")}
                 </td>
 
-                <td className="px-6 py-6 text-lg text-gray-700 font-medium">
-                  {r.lastUpdate}
-                </td>
+                <td className="px-6 py-5 text-gray-700">{r.lastUpdate}</td>
               </tr>
             ))}
           </tbody>
