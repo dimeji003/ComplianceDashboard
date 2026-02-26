@@ -15,7 +15,7 @@ const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042"];
 
 export default function PlatformUsageChart() {
   return (
-    <div className="w-[45%] h-[40%] bg-white shadow-md rounded-xl p-5">
+    <div className="w-[45%] h-[40%] bg-white shadow-md rounded-xl p-5 ">
       <h2 className="font-bold text-2xl mb-4 py-3">Digital Platform Usage</h2>
 
       <PieChart width={450} height={300}>

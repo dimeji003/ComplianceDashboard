@@ -49,14 +49,14 @@ export default function BankRemittanceTracking() {
   return (
     <div className="border border-white p-4 rounded-xl shadow-md bg-white my-10 w-[85%] m-auto">
       <div className="flex items-center gap-3 mb-4">
-        <div className="text-2xl font-semibold">🏦</div>
-        <h1 className="text-2xl font-semibold">Bank Remittance Tracking</h1>
+        <div className="text-xl font-semibold">🏦</div>
+        <h1 className="text-xl font-semibold">Bank Remittance Tracking</h1>
       </div>
 
       <div className="overflow-x-auto rounded-xl border border-gray-100">
         <table className="min-w-[1100px] w-full border-collapse">
           <thead className="bg-gray-50">
-            <tr className="text-left text-xs tracking-widest text-gray-500">
+            <tr className="text-left text-[11px] tracking-widest text-gray-500">
               <th className="px-6 py-4 font-semibold">BANK</th>
               <th className="px-6 py-4 font-semibold">YEAR OF TRANSACTIONS</th>
               <th className="px-6 py-4 font-semibold">AMOUNT DUE</th>
