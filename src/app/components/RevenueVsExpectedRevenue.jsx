@@ -75,7 +75,7 @@ export default function RevenueVsExpectedRevenue() {
     <div className="border border-white p-4 rounded-xl shadow-md w-[45%] h-[40%]">
       <div className="flex items-center gap-3 mb-3">
         <div className="text-2xl font-semibold">₦</div>
-        <h1 className="text-2xl font-semibold">Revenue vs Expected Revenue</h1>
+        <h1 className="text-xl font-semibold">Revenue vs Expected Revenue</h1>
       </div>
 
       <div style={{ width: "100%", height: 340 }}>

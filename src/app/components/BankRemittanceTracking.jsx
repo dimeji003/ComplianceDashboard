@@ -47,7 +47,7 @@ const formatCurrency = (amount) => `₦${amount.toLocaleString("en-NG")}`;
 
 export default function BankRemittanceTracking() {
   return (
-    <div className="border border-white p-4 rounded-xl shadow-md bg-white my-10 w-[85%] m-auto">
+    <div className="border border-white p-4 rounded-xl shadow-md bg-white my-14 w-[85%] m-auto">
       <div className="flex items-center gap-3 mb-4">
         <div className="text-xl font-semibold">🏦</div>
         <h1 className="text-xl font-semibold">Bank Remittance Tracking</h1>
@@ -72,7 +72,7 @@ export default function BankRemittanceTracking() {
             {rows.map((r) => (
               <tr
                 key={`${r.bank}-${r.year}`}
-                className="border-t border-gray-100 hover:bg-gray-50 transition"
+                className="border-t border-gray-100 hover:bg-gray-50 text-[15px] transition"
               >
                 <td className="px-6 py-5 text-blue-600 font-semibold">
                   {r.bank}
@@ -88,7 +88,7 @@ export default function BankRemittanceTracking() {
                   {formatCurrency(r.amountRemitted)}
                 </td>
 
-                <td className="px-6 py-5 text-gray-700 font-medium">
+                <td className="px-6 py-5 text-gray-700 text-center font-medium">
                   {r.transmissionsAbove10k.toLocaleString("en-NG")}
                 </td>
 

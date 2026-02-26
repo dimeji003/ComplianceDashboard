@@ -25,7 +25,7 @@ export default function SubmissionTrend() {
 
   return (
     <div className="w-[45%] h-[450px] shadow-md rounded-md p-5">
-      <h2 className="font-bold text-2xl py-3">
+      <h2 className="font-bold text-xl py-3">
         Submission Trend
       </h2>
 

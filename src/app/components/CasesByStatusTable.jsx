@@ -74,8 +74,8 @@ export default function CasesByStatusTable() {
   return (
     <div className="border border-white p-4 rounded-xl shadow-md bg-white my-10 w-[85%] m-auto">
       <div className="flex items-center gap-3 mb-4">
-        <div className="text-2xl font-semibold">📋</div>
-        <h1 className="text-2xl font-semibold">Tax Dispute Cases</h1>
+        <div className="text-xl font-semibold">📋</div>
+        <h1 className="text-xl font-semibold">Tax Dispute Cases</h1>
       </div>
 
       <div className="overflow-x-auto rounded-xl border border-gray-100">
@@ -92,7 +92,7 @@ export default function CasesByStatusTable() {
             </tr>
           </thead>
 
-          <tbody>
+          <tbody className="text-sm">
             {rows.map((r) => (
               <tr key={r.caseId} className="border-t border-gray-100 hover:bg-gray-50 transition">
                 <td className="px-6 py-5 text-blue-600 font-semibold">
