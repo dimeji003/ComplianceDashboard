@@ -9,6 +9,7 @@ import DigitalPlatformUsage from "./DigitalPlatformUsage"
 import FilingTrendsChart from './FillingTrends';
 import TopNonCompliantTable from './TopNonCompliantTable';
 import BankRemittanceTracking from './BankRemittanceTracking';
+import ComplianceRateTrend from './ComplianceRateTrend';
 
 export default function Main(){
     return (
@@ -40,9 +41,14 @@ export default function Main(){
                 <DigitalPlatformUsage />
                 <FilingTrendsChart />
             </div>
-            <div className="w-[85%] m-auto my-10">
-                <TopNonCompliantTable />
-            </div>
+            <div className="w-[85%] m-auto my-10 flex flex-col lg:flex-row gap-6 items-start">
+                <div className="lg:w-1/2 w-full">
+                    <TopNonCompliantTable />
+                </div>
+                <div className="lg:w-1/2 w-full">
+                    <ComplianceRateTrend />
+                </div>
+            </div>  
             <div className="w-[85%] m-auto my-10">
                 <BankRemittanceTracking />
             </div>
