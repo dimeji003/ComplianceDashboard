@@ -7,6 +7,8 @@ import RevenueVsExpectedRevenue from "./RevenueVsExpectedRevenue";
 import CasesByStatus from "./CasesByStatus";
 import DigitalPlatformUsage from "./DigitalPlatformUsage"
 import FilingTrendsChart from './FillingTrends';
+import TopNonCompliantTable from './TopNonCompliantTable';
+import BankRemittanceTracking from './BankRemittanceTracking';
 
 export default function Main(){
     return (
@@ -37,6 +39,12 @@ export default function Main(){
             <div className=' ml-20 flex flex-row gap-7 mt-11  m-auto'>
                 <DigitalPlatformUsage />
                 <FilingTrendsChart />
+            </div>
+            <div className="w-[85%] m-auto my-10">
+                <TopNonCompliantTable />
+            </div>
+            <div className="w-[85%] m-auto my-10">
+                <BankRemittanceTracking />
             </div>
             </div>
             
