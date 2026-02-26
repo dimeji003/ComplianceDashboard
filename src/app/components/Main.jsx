@@ -10,6 +10,8 @@ import FilingTrendsChart from './FillingTrends';
 import TopNonCompliantTable from './TopNonCompliantTable';
 import BankRemittanceTracking from './BankRemittanceTracking';
 import ComplianceRateTrend from './ComplianceRateTrend';
+import SubmissionTrend from './SubmissionTrends'
+import DigitalPlatformTable from './DigitalplatformTable'
 
 export default function Main(){
     return (
@@ -51,6 +53,13 @@ export default function Main(){
             <div className=' ml-20 flex flex-row gap-7 mt-11  m-auto'>
         
                 <FilingTrendsChart />
+                <SubmissionTrend />
+            </div>
+            <div>
+                <DigitalPlatformTable />
+            </div>
+            <div className='mt-11'>
+                <DigitalPlatformUsage />
             </div>
             </div>
             
