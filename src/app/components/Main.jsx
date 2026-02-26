@@ -27,6 +27,14 @@ export default function Main(){
                 
 
             </div>
+            <div className="w-[85%] m-auto my-10 flex flex-col lg:flex-row gap-6 items-start">
+                <div className="lg:w-1/2 w-full">
+                    <TopNonCompliantTable />
+                </div>
+                <div className="lg:w-1/2 w-full">
+                    <ComplianceRateTrend />
+                </div>
+            </div>  
             <div>
                 <CasesByStatusTable />
             </div>
@@ -37,20 +45,12 @@ export default function Main(){
                 <RevenueVsExpectedRevenue />
             </div>
             
-            <div className=' ml-20 flex flex-row gap-7 mt-11  m-auto'>
-                <DigitalPlatformUsage />
-                <FilingTrendsChart />
-            </div>
-            <div className="w-[85%] m-auto my-10 flex flex-col lg:flex-row gap-6 items-start">
-                <div className="lg:w-1/2 w-full">
-                    <TopNonCompliantTable />
-                </div>
-                <div className="lg:w-1/2 w-full">
-                    <ComplianceRateTrend />
-                </div>
-            </div>  
             <div className="w-[85%] m-auto my-10">
                 <BankRemittanceTracking />
+            </div>
+            <div className=' ml-20 flex flex-row gap-7 mt-11  m-auto'>
+        
+                <FilingTrendsChart />
             </div>
             </div>
             
