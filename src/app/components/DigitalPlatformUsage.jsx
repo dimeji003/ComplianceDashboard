@@ -18,7 +18,7 @@ export default function PlatformUsageChart() {
     <div className="w-[45%] h-[40%] bg-white shadow-md rounded-xl p-5 ">
       <h2 className="font-bold text-2xl mb-4 py-3">Digital Platform Usage</h2>
 
-      <PieChart width={450} height={300}>
+      <PieChart width={450} height={325}>
         <Pie
           data={data}
           cx="50%"

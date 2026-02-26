@@ -12,6 +12,7 @@ import BankRemittanceTracking from './BankRemittanceTracking';
 import ComplianceRateTrend from './ComplianceRateTrend';
 import SubmissionTrend from './SubmissionTrends'
 import DigitalPlatformTable from './DigitalplatformTable'
+import SystemIntegrationStatus from './SystemIntegrationStatus'
 
 export default function Main(){
     return (
@@ -59,8 +60,10 @@ export default function Main(){
             <div>
                 <DigitalPlatformTable />
             </div>
-            <div className='mt-11'>
+            <div className=' ml-26 flex flex-row gap-7 mt-11 w-[93%]  m-auto'>
+                
                 <DigitalPlatformUsage />
+                <SystemIntegrationStatus />
             </div>
             </div>
             
